@@ -57,3 +57,25 @@ build/
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Mavens cache and target files
+target/
+.mvn/
+
+# Node.js cache
+node_modules/
+
+# Generated files
+package-lock.json
+
+# IDEs and editors settings
+.idea/
+.vscode/
+*.iml
+
+# Temporary files
+*.log
+*.tmp
+
+# MacOS and other systems metafiles
+.DS_Store
