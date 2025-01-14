@@ -1,0 +1,56 @@
+:host {
+  display: block;
+  position: relative;
+  height: calc(100vh - 138px);
+}
+
+canvas {
+  border: 2px solid black;
+  border-radius: 16px;
+  height: 80%;
+  width: 60%;
+}
+
+.chart-container {
+  height: 60%;
+  width: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+  margin: 30px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 0 10px 0;
+  border: 1px #c8c8c8 solid;
+  border-radius: 16px;
+  background-color: #fff;
+  padding: 20px 10px;
+}
+
+#chart-search-form {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.year-selection-container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.year-slider {
+  flex-grow: 1;
+  max-width: 80%;
+}
+
+.filter-form {
+  display: flex;
+  flex-direction: column;
+}

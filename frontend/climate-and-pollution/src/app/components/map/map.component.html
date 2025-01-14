@@ -1,0 +1,50 @@
+<div class="map-container">
+  <div class="form-container">
+    <form
+      id="search-form"
+      (ngSubmit)="searchCity(searchForm.value.searchTerm!)"
+      [formGroup]="searchForm"
+    >
+      <mat-form-field appearance="outline">
+        <input
+          matInput
+          id="search-term"
+          type="text"
+          formControlName="searchTerm"
+          placeholder="Search for a city"
+        />
+        @if (searchForm.get('searchTerm')?.hasError('required')) {
+          <mat-error>Please enter a search term</mat-error>
+        }
+      </mat-form-field>
+      <button
+        type="submit"
+        mat-flat-button
+        color="primary"
+        [disabled]="searchForm.invalid"
+      >
+        Search
+      </button>
+    </form>
+    <form id="filter-form" [formGroup]="filterForm">
+      @for (filter of filterOptions; track $index) {
+        <label>
+          <input type="checkbox" [formControlName]="filter.key" />
+          <span [innerHTML]="filter.label"></span>
+        </label>
+      }
+    </form>
+    <button
+      type="submit"
+      mat-flat-button
+      color="primary"
+      [disabled]="!searchForm.valid"
+      (click)="saveSettings()"
+    >
+      Save Settings
+    </button>
+  </div>
+  <div class="map-frame">
+    <div id="map"></div>
+  </div>
+</div>

@@ -1,0 +1,95 @@
+<div class="frontpage-container">
+  <div class="city-header-container">
+    <div class="header-title">
+      The most polluted city in the world: Beijing, China
+    </div>
+    <div class="header-aqi">
+      <mat-progress-spinner
+        class="spinner"
+        [mode]="mode"
+        [value]="value"
+        color="accent"
+      ></mat-progress-spinner>
+      <div class="aqi-text">
+        <div class="aqi-title">AQI</div>
+        <div class="aqi-value">209</div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="column">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Air Quality Index levels</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div>
+            <p>
+              0-50: Good – Air quality is considered satisfactory, and air
+              pollution poses little or no risk.
+            </p>
+            <p>
+              51-100: Moderate – Air quality is acceptable; some pollutants may
+              slightly affect sensitive individuals.
+            </p>
+            <p>
+              101-150: Unhealthy for Sensitive Groups – Sensitive groups may
+              experience health effects.
+            </p>
+
+            <p>
+              151-200: Unhealthy – Everyone may experience health effects;
+              sensitive groups may experience more serious effects.
+            </p>
+            <p>
+              201-300: Very Unhealthy – Health alert: everyone may experience
+              serious health effects.
+            </p>
+            <p>
+              301-500: Hazardous – Health warnings of emergency conditions; the
+              entire population is likely to be affected.
+            </p>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="column">
+      <mat-card>
+        <mat-card-content>
+          <div>
+            <p>
+              Long-term exposure to poor air quality, like in Beijing, can lead
+              to several serious health issues:
+            </p>
+            <ul>
+              <li>Respiratory diseases</li>
+              <li>Cardiovascular problems</li>
+              <li>Cancer</li>
+              <li>Weakened immune system</li>
+            </ul>
+          </div>
+        </mat-card-content>
+      </mat-card>
+      <mat-card>
+        <mat-card-content>
+          <p>
+            Check the air pollution levels of different cities in the
+            <a routerLink="map">map</a>
+            section.
+          </p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card>
+        <mat-card-content>
+          <p>
+            Find more information about air pollution and its health effects in
+            the
+            <a routerLink="chart">charts</a>
+            section.
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

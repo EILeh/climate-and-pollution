@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 50px;
+  height: 80px;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  &.active-link {
+    color: turquoise;
+    text-decoration: underline;
+  }
+}

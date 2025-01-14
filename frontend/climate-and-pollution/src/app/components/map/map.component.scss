@@ -1,0 +1,50 @@
+:host {
+  display: block;
+  position: relative;
+  height: calc(100vh - 138px);
+}
+
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 10px 30px;
+}
+
+.map-frame {
+  border: 2px solid black;
+  border-radius: 16px;
+  height: 80%;
+  width: 60%;
+}
+
+#map {
+  height: 100%;
+  border-radius: 16px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 0 10px 0;
+  border: 1px #c8c8c8 solid;
+  border-radius: 16px;
+  background-color: #fff;
+  padding: 20px 10px;
+}
+
+#search-form {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#filter-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
