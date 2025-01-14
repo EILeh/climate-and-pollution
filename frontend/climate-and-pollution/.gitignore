@@ -40,3 +40,21 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Node.js and NPM generated files
+node_modules/
+package-lock.json
+
+# IDE and editors files
+*.iml
+.idea/
+.vscode/
+.DS_Store
+
+# Temporary files
+*.log
+*.tmp
+
+# Mavens cache
+.mvn/
+target/
